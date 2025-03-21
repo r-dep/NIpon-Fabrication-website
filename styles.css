@@ -1,0 +1,178 @@
+/* Apply margin to the entire body */
+body{
+    margin: 20px;
+}
+
+/* Style for the main heading */
+h1 {
+    position: fixed; /* Keep it fixed at the top */
+    top: 0;
+    width: 100%;
+    background:linear-gradient( rgba(0, 0, 255, 0.274), hsl(354, 70%, 54%)); /* Bootstrap danger color */
+    color: white;
+    text-align: center;
+    opacity: 90%;
+    padding: 12px;
+    z-index: 1100; /* Ensure it stays above other elements */
+}
+
+/* Media query for screens wider than 900px */
+@media (min-width:900px) {
+    h1 {
+        opacity: 100%; /* Make fully visible on larger screens */
+    }
+    h1 a{
+        opacity : 100%;
+    }
+    header{
+        opacity: 100%;
+        position: relative;
+        padding-top: 20px;
+        background-color: hsl(354, 70%, 54%);
+    }
+}
+
+/* Style for links inside the heading */
+h1 a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Adjust navbar to scroll normally */
+header {
+    opacity: 90%;
+    background-color: hsl(354, 70%, 54%);
+    position: relative; /* Change from fixed to relative */
+    margin-top: 60px; /* Push it down to avoid overlap with fixed title */
+}
+
+/* Remove underline from links inside unordered lists */
+ul a{
+    text-decoration: none;
+}
+
+/* Ensure images inside carousels are responsive */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Enable smooth scrolling for the webpage */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Define a default height for elements with class reduce-height */
+.reduce-height {
+    height: 500px; /* Default height */
+    overflow: hidden; /* Prevents unwanted overflow */
+}
+
+/* Ensure images fit properly without stretching */
+.carousel-inner img {
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* Media query for larger screens */
+@media (min-width: 1024px) {
+    .reduce-height {
+        height: 700px; /* Adjust height for larger screens */
+    }
+}
+
+/* Scrolling text animation */
+.scrolling-text {
+    white-space: nowrap;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+    animation: scrollText 15s linear infinite; /* Continuous scrolling */
+}
+
+/* Keyframe animation for scrolling text */
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Card styling with shadow effects */
+.card{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 20px 10px;
+    box-shadow: 10px 5px 10px;
+}
+
+/* Center images inside cards */
+.card img{
+    margin: auto;
+}
+
+/* General container margin */
+.container{
+    margin: 30px;
+}
+
+/* Make images inside containers circular */
+.container img{
+    border-radius: 50%;
+}
+
+/* Box styling */
+.box{
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Make iframes responsive with rounded corners */
+iframe{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Styling for links with button-like appearance */
+.link a{
+    width: 200px;
+    margin-bottom: 40px;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+/* Hover effect for links */
+.link a:hover{
+    opacity: 80%;
+}
+
+/* Active state for links */
+.link a:active{
+    opacity: 110%;
+}
+
+/* Add margin to link container */
+.link{
+    margin-bottom: 300px;
+}
+
+/* Adjust padding for links inside the contact section */
+#contact .link{
+    padding-top: 70px;
+}
+/* location */
+#location a{
+    text-decoration: none;
+    color: black;
+}
+#location a:hover{
+    text-decoration: none;
+    color: green;
+}
+#location a:active{
+    text-decoration: none;
+    color: yellow;
+}
