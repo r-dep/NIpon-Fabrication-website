@@ -17,26 +17,32 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/owner.jpg">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/765681db3d.js" crossorigin="anonymous"></script>
-    <script defer src="index.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <h1 class="bg-danger text-white"><a href="https://www.youtube.com/@niponfabrication4339/featured" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a> Nipon Fabrication <a href="https://www.facebook.com/profile.php?id=100083563080741" target="_blank"><i class="fa-brands fa-facebook"></i></a> </h1>
     <header class="bg-danger">
-        <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-danger rounded-5 shadow-lg" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-danger); --bs-nav-pills-link-active-bg: var(--bs-white);">
-            <li class="nav-item" role="presentation">
-                <a href="index.html"><button class="nav-link rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
-                </a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a href="#"><button class="nav-link active rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Profile</button>
-                </a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a href="contact.html"><button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button>
-                </a>
-            </li>
-          </ul>
+        <nav class="navbar bg-dark" data-bs-theme="dark" navbar-expand-lg bg-body-tertiary>
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <h1><strong>Nipon Fabrication</strong></h1></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="profile.html">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main class="text-center" id="profile">
@@ -89,5 +95,6 @@
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2025 Nipon Fabrication. All rights reserved.</p>
     </footer>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
